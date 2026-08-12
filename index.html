@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Repository de formation Git - Apprenez les principales commandes Git">
+    <title>Git Training - Formation Git</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        h2 {
+            color: #764ba2;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .command-list {
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .command {
+            background: white;
+            border-left: 4px solid #667eea;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+
+        .command code {
+            color: #d63384;
+        }
+
+        .description {
+            color: #666;
+            margin-top: 5px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 10px;
+            transition: background 0.3s ease;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background: #764ba2;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../assets/logo_ENI.png" alt="Logo ENI" class="logo">
+        <h1>🚀 ENI ECOLE - Git Training Repository</h1>
+        <p class="subtitle">Maîtrisez les principales commandes Git</p>
+
+        <div class="section">
+            <h2>Bienvenue !</h2>
+            <p>Ce repository est votre terrain d'entraînement pour apprendre et pratiquer Git. Que vous soyez débutant ou que vous souhaitiez perfectionner vos compétences, vous trouverez ici tout ce dont vous avez besoin.</p>
+        </div>
+
+        <div class="section">
+            <h2>Commandes essentielles</h2>
+            <div class="command-list">
+                <div class="command">
+                    <code>git init</code>
+                    <div class="description">Initialiser un nouveau repository Git</div>
+                </div>
+                <div class="command">
+                    <code>git clone &lt;url&gt;</code>
+                    <div class="description">Cloner un repository existant</div>
+                </div>
+                <div class="command">
+                    <code>git add .</code>
+                    <div class="description">Ajouter tous les fichiers modifiés à l'index</div>
+                </div>
+                <div class="command">
+                    <code>git commit -m "message"</code>
+                    <div class="description">Créer un commit avec un message</div>
+                </div>
+                <div class="command">
+                    <code>git push</code>
+                    <div class="description">Envoyer les commits vers le remote</div>
+                </div>
+                <div class="command">
+                    <code>git pull</code>
+                    <div class="description">Récupérer et fusionner les changements</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Commandes avancées</h2>
+            <div class="command-list">
+                <div class="command">
+                    <code>git branch &lt;nom_branche&gt;</code>
+                    <div class="description">Créer une nouvelle branche</div>
+                </div>
+           
+                <div class="command">
+                    <code>git checkout &lt;nom_branche&gt;</code>
+                    <div class="description">Basculer vers une branche spécifique</div>
+                </div>
+           
+                <div class="command">
+                    <code>git merge &lt;nom_branche&gt;</code>
+                    <div class="description">Fusionner une branche dans la branche courante</div>
+                </div>
+            
+                <div class="command">
+                    <code>git rebase &lt;nom_branche&gt;</code>
+                    <div class="description">Rejouer les commits sur une autre branche</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="https://github.com/ENI-Public/Git_training" class="cta-button">Voir sur GitHub</a>
+            <a href="https://git-scm.com/doc" class="cta-button">Documentation Git</a>
+        </div>
+
+        <footer>
+            <p>ENI ECOLE - Git Training Repository</p>
+        </footer>
+    </div>
+</body>
+</html>
