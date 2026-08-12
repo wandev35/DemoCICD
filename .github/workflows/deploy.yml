@@ -1,5 +1,5 @@
 name: deploy-html
-on: [push]
+on: [push, onworkflow_dispatch]
 jobs:
   deploy:
     runs-on: ubuntu-latest
